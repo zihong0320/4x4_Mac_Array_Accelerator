@@ -46,8 +46,8 @@
 
    EN_INPUT1(상위 32비트 Weight 연산용) 또는 EN_INPUT2(하위 32비트 Weight 연산용) 신호가 활성화되면 Clock의 Positive Edge에 맞춰 다음 MAC으로 신호가 전달됨
 
-      **2.3.2-1 MAC ROW 동작과정
-      <img width="1555" height="591" alt="image" src="https://github.com/user-attachments/assets/7d7bf4fa-7e18-47a5-8fb0-608d5e6ee413" />
+      2.3.2-1 MAC ROW 동작과정
+   <img width="1555" height="591" alt="image" src="https://github.com/user-attachments/assets/7d7bf4fa-7e18-47a5-8fb0-608d5e6ee413" />
       <img width="1288" height="541" alt="image" src="https://github.com/user-attachments/assets/23225857-b5ea-49b6-9976-8f609054650c" />
       <img width="1288" height="541" alt="image" src="https://github.com/user-attachments/assets/dab45b5c-6c1d-41be-bce7-3842e4cb62d2" />
       <img width="1288" height="541" alt="image" src="https://github.com/user-attachments/assets/e83b8444-4e78-452f-ab8b-36d33b2162b4" />
@@ -111,7 +111,7 @@
      - EN_WEIGHT_PEarray_reg는 N에 맞게 Weight_row를 활성화시키는 signal
     
       ### 4.1 동작 경우의 수 및 FSM
-        #### ① $N \le 4, M \le 4$
+     #### ① N≤4, M≤4
         <img width="1452" height="725" alt="image" src="https://github.com/user-attachments/assets/7b694f85-eaad-4002-a0cc-7d35fabe1678" />
          <INPUT, WEIGHT 관련 FSM>
 
@@ -129,7 +129,7 @@
          - output address를 0에서 2씩 최대 14까지 증가시켜서 OUT_MEM에 결과값을 저장함.
 
 
-        #### ② N>4, M≤4
+     #### ② N>4, M≤4
         <img width="1654" height="831" alt="image" src="https://github.com/user-attachments/assets/8c0e8edd-22d9-49c8-8566-11cd37eb8755" />
         <INPUT, WEIGHT 관련 FSM>
 
@@ -149,7 +149,7 @@
 
 
 
-     #### ③ N≤4, M>4
+      #### ③ N≤4, M>4
          <img width="1884" height="707" alt="image" src="https://github.com/user-attachments/assets/3ae0727e-9837-4aa1-9eae-ceeb4dc79dd4" />
          <INPUT, WEIGHT 관련 FSM>
 
@@ -184,7 +184,7 @@
          <img width="493" height="597" alt="image" src="https://github.com/user-attachments/assets/cab2026c-e20b-4161-b5d0-2d331633f3cd" />
 
          - N>4, M≤4의 경우를 먼저 진행시킴.
-         - 그 후, M>4인 경우에 대해 ADDR_W를 5부터 M까지 증가시켜 Weight_row를 바꿔주고, 다시 N>4, M≤4인 경우를 순차적으로 진행시킴.
+         - 그 후, M>4인 경우에 대해 ADDR_W를 5부터 M까지 증가시켜 Weight_row를 바꿔주고, 다시 N>4, M≤4인 경우를 순차적으로 진행시킴
 
 
 
@@ -210,10 +210,10 @@
          <img width="502" height="678" alt="image" src="https://github.com/user-attachments/assets/85e3ab21-0213-439a-9fd3-747de154c81a" />
 
 
-         - Testbench 파형 결과: 모든 Case에서 Golden Reference 데이터와 100% 일치하는 정확한 연산 결과 출력을 확인하였습니다.
+         - Testbench 파형 결과: 모든 Case에서 Golden Reference 데이터와 100% 일치하는 정확한 연산 결과 출력을 확인
 
    ### 5.3 논리 합성(Logic Synthesis) 결과
-         제공된 .sdc (Synopsys Design Constraints) 파일을 기반으로 합성을 진행한 결과 이상 없이 Netlist가 생성됨.
+         제공된 .sdc (Synopsys Design Constraints) 파일을 기반으로 합성을 진행한 결과 이상 없이 Netlist가 생성됨
          <img width="827" height="620" alt="image" src="https://github.com/user-attachments/assets/45e65fcf-aa5b-4e98-81c7-b5558fe7b809" />
          <sdc 파일>
       
@@ -229,7 +229,7 @@
 
             - Total Logic Elements: 1,857개 (고효율/저면적 설계 달성)
 
-         - 보라색 warning들의 명칭은 critical warning인데, 첫 번째는 285개의 I/O port를 board에 연결을 안 해서 나온 warning이고, 나머지 4개의 uncertainty warning은 sdc에서 uncertainty를 따로 지정하지 않아 나온 waring으로 추측됨.
+         - 보라색 warning들의 명칭은 critical warning인데, 첫 번째는 285개의 I/O port를 board에 연결을 안 해서 나온 warning이고, 나머지 4개의 uncertainty warning은 sdc에서 uncertainty를 따로 지정하지 않아 나온 waring으로 추측됨
      
    
 
