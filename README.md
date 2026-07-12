@@ -13,7 +13,7 @@
 ### 1.2 변수 정의 (T, N, M)
 
 
-## 2. 하드웨어 아키텍처
+## 2. Hardware Architecture
 
 ### 2.1 전체 시스템 블록 다이어그램 (Block Diagram)
 <img width="1493" height="700" alt="image" src="https://github.com/user-attachments/assets/4300ab39-9542-4c9d-8f96-e28b33989663" />
