@@ -2,15 +2,15 @@
 4x4 Matrix Multiplication Unit
 
 ## 0. Summary
-   - 2개의 Weight를 저장하는 Mac구조와 Weight Stationary 기법을 적용한 4x4 Systolic Array 구조의 행렬 곱셈 가속기(Multiplication Unit)
-   - INPUT, WEIGHT, OUTPUT 각각의 독립된 메모리를 제어하여 최대 8x8 크기의 두 행렬 곱셈을 자동으로 수행하고 결과를 저장하는 하드웨어 시스템으로 구성
+- 2개의 Weight를 저장하는 Mac구조와 Weight Stationary 기법을 적용한 4x4 Systolic Array 구조의 행렬 곱셈 가속기(Multiplication Unit)
+- INPUT, WEIGHT, OUTPUT 각각의 독립된 메모리를 제어하여 최대 8x8 크기의 두 행렬 곱셈을 자동으로 수행하고 결과를 저장하는 하드웨어 시스템으로 구성
 
 
 ## 1. Instruction
 
-   ### 1.1 Systolic Array 개요
-   
-   ### 1.2 변수 정의 (T, N, M)
+### 1.1 Systolic Array 개요
+
+### 1.2 변수 정의 (T, N, M)
 
 
 ## 2. 하드웨어 아키텍처
@@ -110,26 +110,26 @@
      - EN_WEIGHT_SELECT_PEarray_reg는 PEarray에서 4개의 PErow 중 하나를 선택
      - EN_WEIGHT_PEarray_reg는 N에 맞게 Weight_row를 활성화시키는 signal
     
-      ### 4.1 동작 경우의 수 및 FSM
-     #### ① N≤4, M≤4
-        <img width="1452" height="725" alt="image" src="https://github.com/user-attachments/assets/7b694f85-eaad-4002-a0cc-7d35fabe1678" />
-         <INPUT, WEIGHT 관련 FSM>
+   ### 4.1 동작 경우의 수 및 FSM
+   #### ① N≤4, M≤4
+   <img width="1452" height="725" alt="image" src="https://github.com/user-attachments/assets/7b694f85-eaad-4002-a0cc-7d35fabe1678" />
+   <INPUT, WEIGHT 관련 FSM>
+   
+   
+   
+   <img width="1518" height="810" alt="image" src="https://github.com/user-attachments/assets/e59a3861-1276-43e2-b663-8e7e2d599696" />
+   <OUTPUT 관련 FSM>
+   
+   
+   <img width="775" height="516" alt="image" src="https://github.com/user-attachments/assets/f88f6458-1f0e-4d6f-a241-64d031089220" />
+   
+   <img width="451" height="545" alt="image" src="https://github.com/user-attachments/assets/212a11a6-499c-4173-95c0-9f49ee89dfa4" />
+   
+   - N≤4, M≤4의 경우, ADDR_W를 증가시켜, 최대 상위 32비트 Weight_row를 받아 저장시킨 후, ADDR_I를 증가시켜 최대 상위 32비트 INPUT을 받아와서 연산시킴.
+   - output address를 0에서 2씩 최대 14까지 증가시켜서 OUT_MEM에 결과값을 저장함.
 
 
-
-        <img width="1518" height="810" alt="image" src="https://github.com/user-attachments/assets/e59a3861-1276-43e2-b663-8e7e2d599696" />
-        <OUTPUT 관련 FSM>
-
-
-        <img width="775" height="516" alt="image" src="https://github.com/user-attachments/assets/f88f6458-1f0e-4d6f-a241-64d031089220" />
-
-        <img width="451" height="545" alt="image" src="https://github.com/user-attachments/assets/212a11a6-499c-4173-95c0-9f49ee89dfa4" />
-
-         - N≤4, M≤4의 경우, ADDR_W를 증가시켜, 최대 상위 32비트 Weight_row를 받아 저장시킨 후, ADDR_I를 증가시켜 최대 상위 32비트 INPUT을 받아와서 연산시킴.
-         - output address를 0에서 2씩 최대 14까지 증가시켜서 OUT_MEM에 결과값을 저장함.
-
-
-     #### ② N>4, M≤4
+   #### ② N>4, M≤4
         <img width="1654" height="831" alt="image" src="https://github.com/user-attachments/assets/8c0e8edd-22d9-49c8-8566-11cd37eb8755" />
         <INPUT, WEIGHT 관련 FSM>
 
@@ -149,7 +149,7 @@
 
 
 
-      #### ③ N≤4, M>4
+   #### ③ N≤4, M>4
          <img width="1884" height="707" alt="image" src="https://github.com/user-attachments/assets/3ae0727e-9837-4aa1-9eae-ceeb4dc79dd4" />
          <INPUT, WEIGHT 관련 FSM>
 
@@ -170,7 +170,7 @@
       - 그 후, 새로운 Weight_row와의 연산은 output address를 1부터 2씩 증가해 최대 15까지 증가시켜 OUT_MEM에 저장함.
 
 
-         #### ④ N>4, M>4
+   #### ④ N>4, M>4
          <img width="2002" height="628" alt="image" src="https://github.com/user-attachments/assets/afb282c9-5c11-4628-abc3-3d89c1a1e220" />
          <INPUT, WEIGHT 관련 FSM>
 
@@ -194,42 +194,42 @@
       하드웨어 설계의 정확성을 검증하기 위해 C 언어 기반의 Golden Reference Model을 구축하고 Testbench 결과와 비교 분석하였습니다.
 
 
-         <img width="1806" height="333" alt="image" src="https://github.com/user-attachments/assets/1e515b6c-2c82-4bbe-a468-e33e44fc7ed2" />
-         <8x8 행렬 곱셈>
+   <img width="1806" height="333" alt="image" src="https://github.com/user-attachments/assets/1e515b6c-2c82-4bbe-a468-e33e44fc7ed2" />
+   <8x8 행렬 곱셈>
 
-         <img width="914" height="571" alt="image" src="https://github.com/user-attachments/assets/601bd0ee-be22-4a89-a5ac-33ba2ee17bd9" />
-         <Testbench code 결과>
+   <img width="914" height="571" alt="image" src="https://github.com/user-attachments/assets/601bd0ee-be22-4a89-a5ac-33ba2ee17bd9" />
+   <Testbench code 결과>
 
-         <img width="988" height="575" alt="image" src="https://github.com/user-attachments/assets/9c26812b-f674-4091-b73e-8c8b115e3b22" />
-         <Golden Reference Model 결과>
+   <img width="988" height="575" alt="image" src="https://github.com/user-attachments/assets/9c26812b-f674-4091-b73e-8c8b115e3b22" />
+   <Golden Reference Model 결과>
 
 
    ### 5.2 Golden model code
-         <img width="574" height="678" alt="image" src="https://github.com/user-attachments/assets/d2fcc537-1a51-4a8c-9b18-0cc6c93d1d4b" />
+   <img width="574" height="678" alt="image" src="https://github.com/user-attachments/assets/d2fcc537-1a51-4a8c-9b18-0cc6c93d1d4b" />
 
-         <img width="502" height="678" alt="image" src="https://github.com/user-attachments/assets/85e3ab21-0213-439a-9fd3-747de154c81a" />
+   <img width="502" height="678" alt="image" src="https://github.com/user-attachments/assets/85e3ab21-0213-439a-9fd3-747de154c81a" />
 
 
-         - Testbench 파형 결과: 모든 Case에서 Golden Reference 데이터와 100% 일치하는 정확한 연산 결과 출력을 확인
+   - Testbench 파형 결과: 모든 Case에서 Golden Reference 데이터와 100% 일치하는 정확한 연산 결과 출력을 확인
 
    ### 5.3 논리 합성(Logic Synthesis) 결과
-         제공된 .sdc (Synopsys Design Constraints) 파일을 기반으로 합성을 진행한 결과 이상 없이 Netlist가 생성됨
-         <img width="827" height="620" alt="image" src="https://github.com/user-attachments/assets/45e65fcf-aa5b-4e98-81c7-b5558fe7b809" />
-         <sdc 파일>
-      
-         <img width="1104" height="651" alt="image" src="https://github.com/user-attachments/assets/0afd7836-a3a8-4f24-979e-671f628df2f2" />
-         <img width="1179" height="652" alt="image" src="https://github.com/user-attachments/assets/34a7955f-43fe-47b2-8b50-1b05bbf1d14e" />
-         <Synthesis 결과>
+   제공된 .sdc (Synopsys Design Constraints) 파일을 기반으로 합성을 진행한 결과 이상 없이 Netlist가 생성됨
+   <img width="827" height="620" alt="image" src="https://github.com/user-attachments/assets/45e65fcf-aa5b-4e98-81c7-b5558fe7b809" />
+   <sdc 파일>
 
-         - 최대 동작 주파수 (Fmax): 76.37 MHz (예상)
+   <img width="1104" height="651" alt="image" src="https://github.com/user-attachments/assets/0afd7836-a3a8-4f24-979e-671f628df2f2" />
+   <img width="1179" height="652" alt="image" src="https://github.com/user-attachments/assets/34a7955f-43fe-47b2-8b50-1b05bbf1d14e" />
+   <Synthesis 결과>
 
-         - 하드웨어 리소스 사용량:
+   - 최대 동작 주파수 (Fmax): 76.37 MHz (예상)
 
-            - Embedded Multiplier 9-bit elements: 16개
+   - 하드웨어 리소스 사용량:
 
-            - Total Logic Elements: 1,857개 (고효율/저면적 설계 달성)
+      - Embedded Multiplier 9-bit elements: 16개
 
-         - 보라색 warning들의 명칭은 critical warning인데, 첫 번째는 285개의 I/O port를 board에 연결을 안 해서 나온 warning이고, 나머지 4개의 uncertainty warning은 sdc에서 uncertainty를 따로 지정하지 않아 나온 waring으로 추측됨
+      - Total Logic Elements: 1,857개 (고효율/저면적 설계 달성)
+
+      - 보라색 warning들의 명칭은 critical warning인데, 첫 번째는 285개의 I/O port를 board에 연결을 안 해서 나온 warning이고, 나머지 4개의 uncertainty warning은 sdc에서 uncertainty를 따로 지정하지 않아 나온 waring으로 추측됨
      
    
 
