@@ -6,14 +6,14 @@
    - INPUT, WEIGHT, OUTPUT 각각의 독립된 메모리를 제어하여 최대 8x8 크기의 두 행렬 곱셈을 자동으로 수행하고 결과를 저장하는 하드웨어 시스템으로 구성
 
 
-1. Instruction
+## 1. Instruction
 
    1.1 Systolic Array 개요
    
    1.2 변수 정의 (T, N, M)
 
 
-2. 하드웨어 아키텍처
+## 2. 하드웨어 아키텍처
 
    2.1 전체 시스템 블록 다이어그램 (Block Diagram)
    <img width="1493" height="700" alt="image" src="https://github.com/user-attachments/assets/4300ab39-9542-4c9d-8f96-e28b33989663" />
@@ -78,7 +78,7 @@
       
 
 
-   3. 파이프라인 타이밍 설계 (Pipeline Timing)
+  ## 3. 파이프라인 타이밍 설계 (Pipeline Timing)
       Weight가 먼저 고정(Stationary)된 상태에서 $4 \times 4$ 행렬 곱셈 결과가 최종적으로 정렬되어 출력되기까지 총 7 Cycle이 소요
       
       3.1 Latency 분석
@@ -98,7 +98,7 @@
        UPErow1의 유효 신호인 VAL_o[0] 역시 레지스터를 통해 3 Cycle 지연되어, 데이터 정렬과 정확히 일치하는 Cycle 7 시점에 OUT_VALID로 출력
    
    
-   4. Control Unit(FSM)
+   ## 4. Control Unit(FSM)
    <img width="1797" height="717" alt="image" src="https://github.com/user-attachments/assets/7e6f28f1-fca4-4918-b88e-c744d2f0c04f" />
    
    - INPUT_MEM: 64비트씩 최대 2회 로드 (EN_INPUT1에 따라 상/하위 32비트 Truncate 분기)
@@ -188,7 +188,7 @@
 
 
 
-   5. 검증 및 합성 결과 (Verification & Synthesis)
+   ## 5. 검증 및 합성 결과 (Verification & Synthesis)
 
       5.1 시뮬레이션 결과 검증 ($T, N, M = 8$ 예시)
       하드웨어 설계의 정확성을 검증하기 위해 C 언어 기반의 Golden Reference Model을 구축하고 Testbench 결과와 비교 분석하였습니다.
