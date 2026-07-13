@@ -13,10 +13,10 @@
 <img width="758" height="481" alt="image" src="https://github.com/user-attachments/assets/d76ddf4b-6d12-475d-b9a3-a9bac64a9ad7" />
 <dataflow - systolic array>
 
-- Temporal Architecture(SIMD/SIMT)
+<Temporal Architecture(SIMD/SIMT)>
      - CPU와 GPU의 연산부분의 구조
 
-- Spatial Architecture(Dataflow Processing)
+<Spatial Architecture(Dataflow Processing)>
      - TPU, NPU와 같은 DNN accelerator의 연산부분의 구조
 
 - PE : 오른쪽 부분에서 ALU와 파란색, 빨간색이 합쳐진 작은 네모 하나
