@@ -67,7 +67,7 @@ $$\text{doublePE} \xrightarrow{\times 4} \text{PErow} \xrightarrow{\times 4} \te
    - EN_INPUT1(상위 32비트 Weight 연산용) 또는 EN_INPUT2(하위 32비트 Weight 연산용) 신호가 활성화되면 Clock의 Positive Edge에 맞춰 다음 MAC으로 신호가 전달됨
 
 2.3.2-1 MAC ROW 동작과정
-<img width="1555" height="591" alt="image" src="https://github.com/user-attachments/assets/7d7bf4fa-7e18-47a5-8fb0-608d5e6ee413" />
+<img width="788" height="295" alt="image" src="https://github.com/user-attachments/assets/7d7bf4fa-7e18-47a5-8fb0-608d5e6ee413" />
 <img width="644" height="271" alt="image" src="https://github.com/user-attachments/assets/23225857-b5ea-49b6-9976-8f609054650c" />
 <img width="644" height="271" alt="image" src="https://github.com/user-attachments/assets/dab45b5c-6c1d-41be-bce7-3842e4cb62d2" />
 <img width="644" height="271" alt="image" src="https://github.com/user-attachments/assets/e83b8444-4e78-452f-ab8b-36d33b2162b4" />
