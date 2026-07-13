@@ -68,15 +68,15 @@ $$\text{doublePE} \xrightarrow{\times 4} \text{PErow} \xrightarrow{\times 4} \te
 
 2.3.2-1 MAC ROW 동작과정
 <img width="1555" height="591" alt="image" src="https://github.com/user-attachments/assets/7d7bf4fa-7e18-47a5-8fb0-608d5e6ee413" />
-<img width="1288" height="541" alt="image" src="https://github.com/user-attachments/assets/23225857-b5ea-49b6-9976-8f609054650c" />
-<img width="1288" height="541" alt="image" src="https://github.com/user-attachments/assets/dab45b5c-6c1d-41be-bce7-3842e4cb62d2" />
-<img width="1288" height="541" alt="image" src="https://github.com/user-attachments/assets/e83b8444-4e78-452f-ab8b-36d33b2162b4" />
-<img width="1288" height="497" alt="image" src="https://github.com/user-attachments/assets/024edca0-c4fe-4833-91a6-125c8ad71944" />
-<img width="1558" height="591" alt="image" src="https://github.com/user-attachments/assets/85c81b55-5f10-423e-9a4c-8e40b3f3ae36" />
-<img width="1288" height="541" alt="image" src="https://github.com/user-attachments/assets/f9962a26-ed44-4c9e-a094-244aa9c8307c" />
-<img width="1288" height="541" alt="image" src="https://github.com/user-attachments/assets/e0997878-2fb3-4300-ad05-4c5fb82dbfbb" />
-<img width="1288" height="541" alt="image" src="https://github.com/user-attachments/assets/56156df0-67e5-47dc-803c-fa1496270ca2" />
-<img width="1288" height="497" alt="image" src="https://github.com/user-attachments/assets/3d96ae51-f1d0-49df-8d43-518e00502c34" />
+<img width="644" height="271" alt="image" src="https://github.com/user-attachments/assets/23225857-b5ea-49b6-9976-8f609054650c" />
+<img width="644" height="271" alt="image" src="https://github.com/user-attachments/assets/dab45b5c-6c1d-41be-bce7-3842e4cb62d2" />
+<img width="644" height="271" alt="image" src="https://github.com/user-attachments/assets/e83b8444-4e78-452f-ab8b-36d33b2162b4" />
+<img width="644" height="249" alt="image" src="https://github.com/user-attachments/assets/024edca0-c4fe-4833-91a6-125c8ad71944" />
+<img width="644" height="295" alt="image" src="https://github.com/user-attachments/assets/85c81b55-5f10-423e-9a4c-8e40b3f3ae36" />
+<img width="644" height="271" alt="image" src="https://github.com/user-attachments/assets/f9962a26-ed44-4c9e-a094-244aa9c8307c" />
+<img width="644" height="271" alt="image" src="https://github.com/user-attachments/assets/e0997878-2fb3-4300-ad05-4c5fb82dbfbb" />
+<img width="644" height="271" alt="image" src="https://github.com/user-attachments/assets/56156df0-67e5-47dc-803c-fa1496270ca2" />
+<img width="644" height="249" alt="image" src="https://github.com/user-attachments/assets/3d96ae51-f1d0-49df-8d43-518e00502c34" />
 
 
 
