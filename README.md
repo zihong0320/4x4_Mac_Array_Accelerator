@@ -13,6 +13,16 @@
 <img width="758" height="481" alt="image" src="https://github.com/user-attachments/assets/d76ddf4b-6d12-475d-b9a3-a9bac64a9ad7" />
 <dataflow - systolic array>
 
+- Temporal Architecture(SIMD/SIMT)
+     - CPU와 GPU의 연산부분의 구조
+
+- Spatial Architecture(Dataflow Processing)
+     - TPU, NPU와 같은 DNN accelerator의 연산부분의 구조
+
+- PE : 오른쪽 부분에서 ALU와 파란색, 빨간색이 합쳐진 작은 네모 하나
+- Data reuse를 최대한 사용하기 위해 PE(processing element)를 사용하여 연산하는 부분을 구성
+- PE는 MAC연산을 수행하는 연산자(ALU) + 재사용할 data를 저장해두는 local memory로 구성
+
 <img width="779" height="519" alt="image" src="https://github.com/user-attachments/assets/68173c43-2577-4690-8469-de1c022bf8d5" />
 
 - (a) : Weight Stationary
