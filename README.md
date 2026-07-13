@@ -15,7 +15,8 @@
 
 <img width="779" height="519" alt="image" src="https://github.com/user-attachments/assets/68173c43-2577-4690-8469-de1c022bf8d5" />
 
-(a) : Weight Stationary   (b) : Output Stationary
+- (a) : Weight Stationary
+- (b) : Output Stationary
 
 ### 1.2 변수 정의 (T, N, M)
 
