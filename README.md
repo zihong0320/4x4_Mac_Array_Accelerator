@@ -15,6 +15,9 @@
 <img width="737" height="708" alt="image" src="https://github.com/user-attachments/assets/1f5c47f8-a1df-4363-abe8-07615d1b2437" />
 <Weight Stationary>
 
+<img width="991" height="769" alt="image" src="https://github.com/user-attachments/assets/a664c901-2335-40cf-9c5e-7d0584c154c2" />
+
+
 
 ### 1.2 변수 정의 (T, N, M)
 
