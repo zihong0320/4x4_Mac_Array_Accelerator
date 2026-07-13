@@ -27,6 +27,9 @@ Spatial Architecture(Dataflow Processing) -> TPU, NPU와 같은 DNN accelerator�
 - (b) : Output Stationary
 
 ### 1.2 변수 정의 (T, N, M)
+<img width="883" height="235" alt="image" src="https://github.com/user-attachments/assets/fb001f73-fdd8-44ea-a56c-b54c403e73fb" />
+<img width="486" height="221" alt="image" src="https://github.com/user-attachments/assets/8fc7c967-e012-4d21-aa67-a0370e0d06f8" />
+
 
 
 ## 2. Hardware Architecture
