@@ -67,8 +67,7 @@ $$\text{doublePE} \xrightarrow{\times 4} \text{PErow} \xrightarrow{\times 4} \te
    - EN_INPUT1(상위 32비트 Weight 연산용) 또는 EN_INPUT2(하위 32비트 Weight 연산용) 신호가 활성화되면 Clock의 Positive Edge에 맞춰 다음 MAC으로 신호가 전달됨
 
 
-2.3.2-1 MAC ROW 동작과정
-
+##### 2.3.2-1 MAC ROW 동작과정
 
 <img width="788" height="295" alt="image" src="https://github.com/user-attachments/assets/7d7bf4fa-7e18-47a5-8fb0-608d5e6ee413" />
 <img width="644" height="271" alt="image" src="https://github.com/user-attachments/assets/23225857-b5ea-49b6-9976-8f609054650c" />
@@ -96,8 +95,8 @@ $$\text{doublePE} \xrightarrow{\times 4} \text{PErow} \xrightarrow{\times 4} \te
    - 타이밍에 맞춰 입력을 지연시켰기 때문에 출력(OUT_OUTPUT) 역시 행마다 한 사이클씩 밀려서 출력됨
 
 
-2.3.2-2 MAC ARRAY 출력
-<img width="1520" height="802" alt="image" src="https://github.com/user-attachments/assets/2a1cedd6-47e2-440c-933e-3314a55f0d5e" />
+##### 2.3.2-2 MAC ARRAY 출력
+<img width="760" height="401" alt="image" src="https://github.com/user-attachments/assets/2a1cedd6-47e2-440c-933e-3314a55f0d5e" />
 
 
 
