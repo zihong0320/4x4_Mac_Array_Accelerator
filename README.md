@@ -1,4 +1,4 @@
-# 4x4_Mac_Array_Accelerator 설계
+<img width="1354" height="228" alt="image" src="https://github.com/user-attachments/assets/7c5e6d9b-17b9-458d-afaa-2b856723f38d" /># 4x4_Mac_Array_Accelerator 설계
 4x4 Matrix Multiplication Unit
 
 ## 0. Summary
@@ -27,7 +27,8 @@ Spatial Architecture(Dataflow Processing) -> TPU, NPU와 같은 DNN accelerator�
 - (b) : Output Stationary
 
 ### 1.2 변수 정의 (T, N, M)
-<img width="1362" height="240" alt="image" src="https://github.com/user-attachments/assets/08e2d390-32d6-467f-9af1-8ae5a3629c15" />
+<img width="1354" height="228" alt="image" src="https://github.com/user-attachments/assets/a5d2b361-01e5-438a-939c-f73101924b61" />
+
 
 
 
