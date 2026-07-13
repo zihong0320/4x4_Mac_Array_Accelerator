@@ -52,7 +52,7 @@ Datapath는 아래의 방식으로 인스턴스화되어 구성됨.
 $$\text{doublePE} \xrightarrow{\times 4} \text{PErow} \xrightarrow{\times 4} \text{PEarray (Datapath)}$$
 
 #### 2.3.1 MAC
-<img width="827" height="418" alt="image" src="https://github.com/user-attachments/assets/3776c6cb-2104-4ecc-a0b6-2f0181fe8c5f" />
+<img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/3776c6cb-2104-4ecc-a0b6-2f0181fe8c5f" />
 
 - MAC 구조 : 하나의 MAC에 2개의 Weight를 저장해 한 번에 최대 16비트를 로딩하도록 구현
 
