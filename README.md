@@ -9,6 +9,12 @@
 ## 1. Instruction
 
 ### 1.1 Systolic Array 개요
+<img width="758" height="481" alt="image" src="https://github.com/user-attachments/assets/d76ddf4b-6d12-475d-b9a3-a9bac64a9ad7" />
+<dataflow - systolic array>
+
+<img width="737" height="708" alt="image" src="https://github.com/user-attachments/assets/1f5c47f8-a1df-4363-abe8-07615d1b2437" />
+<Weight Stationary>
+
 
 ### 1.2 변수 정의 (T, N, M)
 
