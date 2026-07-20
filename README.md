@@ -1,9 +1,14 @@
 # 4x4 Mac Array Accelerator
 
 ## 0. Summary
+#### ABSTRACT
 - 2개의 Weight를 저장하는 Mac구조와 Weight Stationary 기법을 적용한 4x4 Systolic Array 구조의 행렬 곱셈 가속기(Multiplication Unit)
 - INPUT, WEIGHT, OUTPUT 각각의 독립된 메모리를 제어하여 최대 8x8 크기의 두 행렬 곱셈을 자동으로 수행하고 결과를 저장하는 하드웨어 시스템으로 구성
 
+#### Tool & Language
+- Tool : Modelsim
+- Language : Verilog, C
+- Technique : Systolic Array(Weight Stationary), Golden Reference Model
 
 ## 1. Instruction
 
