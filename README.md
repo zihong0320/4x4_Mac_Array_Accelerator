@@ -2,7 +2,7 @@
 
 ## 0. Summary
 #### ABSTRACT
-- 2개의 Weight를 저장하는 Mac구조와 Weight Stationary 기법을 적용한 4x4 Systolic Array 구조의 행렬 곱셈 가속기(Multiplication Unit)
+- 2개의 Weight를 저장하는 MAC구조와 Weight Stationary 기법을 적용한 4x4 Systolic Array 구조의 행렬 곱셈 가속기(Multiplication Unit)
 - INPUT, WEIGHT, OUTPUT 각각의 독립된 메모리를 제어하여 최대 8x8 크기의 두 행렬 곱셈을 자동으로 수행하고 결과를 저장하는 하드웨어 시스템으로 구성
 <br><br>
 
@@ -11,6 +11,12 @@
 - Language : Verilog, C
 - Technique : Systolic Array(Weight Stationary), Golden Reference Model
 <br><br>
+
+#### 담당 역할
+- 2개의 Weight를 저장하는 MAC 구조 및 Weight Stationary 기법 적용
+- Datapath 설계
+- Golden Reference Model 구성(C 기반)
+
 
 ## 1. Instruction
 
@@ -115,7 +121,7 @@ $$\text{doublePE} \xrightarrow{\times 4} \text{PErow} \xrightarrow{\times 4} \te
 
 <br><br>
 
-##### 2.3.2-2 MAC ARRAY 출력
+##### 2.3.3-1 MAC ARRAY 출력
 <img width="760" height="401" alt="image" src="https://github.com/user-attachments/assets/2a1cedd6-47e2-440c-933e-3314a55f0d5e" />
 
 <br><br>
