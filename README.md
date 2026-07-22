@@ -22,7 +22,7 @@
 
 ---
 
-## 📚 1. Instruction
+## 📚 1. Introduction
 
 ### 1.1 Systolic Array 개요
 
